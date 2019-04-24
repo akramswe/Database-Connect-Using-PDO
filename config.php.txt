@@ -1,0 +1,16 @@
+<?php
+$host ="Localhost";
+$dbuser="root";
+$dbpass="";
+$dbname="Regform";
+$con=mysqli_connect($host,$dbuser,$dbpass,$dbname);
+     if($con)
+       {
+         echo "connect Successful";
+       }
+     else
+       {
+         echo "connect problem";
+        }
+
+?>

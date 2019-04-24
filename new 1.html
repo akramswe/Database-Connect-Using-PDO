@@ -1,0 +1,27 @@
+<html>
+   <head>
+   <script type="text/javascript">
+   var addField=function(id)
+   {
+   var count=0;
+   var field=document.getElementById("first"+count).value;
+   var id=id;
+   if(field)
+   {
+   count=count+1;
+   document.getElementById(id).style="disply:block";
+   }
+   else
+   {
+   alter("Fill the data first");
+   }
+   }
+   </script>
+   </head>
+   <body>
+<form id="form_id">
+<input type="text" id="first0" onchange="addField('first1')"/>
+<input type="text" id="first1" onchange="addField('first2')" style="disply:none"/>
+<input type="text" id="first2" style="disply:none"/>
+</body>
+</html>
